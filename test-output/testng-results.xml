@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="67604" started-at="2020-05-14T06:06:58Z" finished-at="2020-05-14T06:08:06Z">
+  <suite name="Default suite" duration-ms="65836" started-at="2020-06-12T19:01:48Z" finished-at="2020-06-12T19:02:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="67604" started-at="2020-05-14T06:06:58Z" finished-at="2020-05-14T06:08:06Z">
-      <class name="corporateManagement.SearchCorporateTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:corporateManagement.SearchCorporateTest@4501b7af]" name="launchBrowser" is-config="true" duration-ms="48925" started-at="2020-05-14T11:36:58Z" finished-at="2020-05-14T11:37:47Z">
+    <test name="Default test" duration-ms="65836" started-at="2020-06-12T19:01:48Z" finished-at="2020-06-12T19:02:54Z">
+      <class name="boca.flight.FlightSearchOneWayTest">
+        <test-method status="PASS" signature="setUpFiles()[pri:0, instance:boca.flight.FlightSearchOneWayTest@3ffc5af1]" name="setUpFiles" is-config="true" duration-ms="16" started-at="2020-06-13T00:31:48Z" finished-at="2020-06-13T00:31:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="searchCorporateByAccount()[pri:0, instance:corporateManagement.SearchCorporateTest@4501b7af]" name="searchCorporateByAccount" duration-ms="14683" started-at="2020-05-14T11:37:47Z" finished-at="2020-05-14T11:38:02Z">
+        </test-method> <!-- setUpFiles -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:boca.flight.FlightSearchOneWayTest@3ffc5af1]" name="setup" is-config="true" duration-ms="51075" started-at="2020-06-13T00:31:48Z" finished-at="2020-06-13T00:32:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchCorporateByAccount -->
-        <test-method status="PASS" signature="searchCorporateByName()[pri:0, instance:corporateManagement.SearchCorporateTest@4501b7af]" name="searchCorporateByName" duration-ms="3962" started-at="2020-05-14T11:38:02Z" finished-at="2020-05-14T11:38:06Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchFlightOneWay(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:boca.flight.FlightSearchOneWayTest@3ffc5af1]" name="searchFlightOneWay" duration-ms="13902" started-at="2020-06-13T00:32:40Z" data-provider="readExcelData" finished-at="2020-06-13T00:32:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Corporate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Emp123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tarun Chugh Singh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Business]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Individual]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchCorporateByName -->
-      </class> <!-- corporateManagement.SearchCorporateTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- searchFlightOneWay -->
+      </class> <!-- boca.flight.FlightSearchOneWayTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

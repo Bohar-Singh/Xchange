@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="Utilities.ExtentReporterNG"/>
-  </listeners>
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="corporateManagement.SearchCorporateTest">
+      <class name="boca.flight.FlightSearchOneWayTest">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="searchCorporateByName"/>
-          <include name="searchCorporateByAccount"/>
+          <include name="setup"/>
+          <include name="searchFlightOneWay" invocation-numbers="0"/>
+          <include name="setUpFiles"/>
         </methods>
-      </class> <!-- corporateManagement.SearchCorporateTest -->
+      </class> <!-- boca.flight.FlightSearchOneWayTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

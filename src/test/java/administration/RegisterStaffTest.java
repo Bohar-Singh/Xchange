@@ -1,11 +1,14 @@
 package administration;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Utilities.BaseLib;
@@ -18,11 +21,16 @@ public class RegisterStaffTest extends BaseLib {
 		loadFiles();
 		userEnvironment(p.getProperty("Env"));
 	}
-	
+	/*
+	@DataProvider
+	public Object[][] getstaffData() 
+	{
+	}
+	*/
 	
 	
 	@Test()
-	public void searchCorporateByAccount() throws Exception
+	public void staffRegister() throws Exception
 	{
 	
 		backToLeftFrame();
